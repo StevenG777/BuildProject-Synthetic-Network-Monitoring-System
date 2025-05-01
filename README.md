@@ -3,10 +3,15 @@
 ## Purpose
 The synthetic monitor system monitors networking latency statistics using a ping tool and displays their trend through Grafana in a simulated environment, aiming to provide the transparency of network conditions in reaching out to external servers.
 
-## Usage
-- Grafana Dashboard: <img width="1103" alt="Image" src="https://github.com/user-attachments/assets/5ecea76c-f25f-47b1-b661-5bf26cab651a" />
+## Features
+- Display network latency statistics in pinging Google.com, Cloudflare.com, and Yahoo.com
+- Capture and store network latency results in time-series formats using Prometheus
+- Visualize network latency trends in Grafana dashboards.
 
-## Installation
+## Grafana Dashboard Visualization
+- <img width="1103" alt="Image" src="https://github.com/user-attachments/assets/5ecea76c-f25f-47b1-b661-5bf26cab651a" />
+
+## Usage
 - For PING Parser:
   - Navigate to the directory of ping_parser.py, run `Python ping_parser.py`
   - The program will run indefinitely to collect ping results
@@ -33,11 +38,6 @@ The synthetic monitor system monitors networking latency statistics using a ping
   - Access the GUI:
     1. Open your web browser
     2. Go to `http://localhost:3000/`
-
-## Features
-- Display network latency statistics in pinging Google.com, Cloudflare.com, and Yahoo.com
-- Capture and store network latency results in time-series formats using Prometheus
-- Visualize network latency trends in Grafana dashboards.
 
 ## Functionalities
 - **Ping Config File Parser**: Parse the YAML configuration file for pinging the servers.
