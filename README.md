@@ -53,5 +53,5 @@
     2. Go to `http://localhost:3000/`
 
 ## Final Result
-Grafana Dashboard:
+Grafana Dashboard: <img width="1103" alt="Image" src="https://github.com/user-attachments/assets/5ecea76c-f25f-47b1-b661-5bf26cab651a" />
 
