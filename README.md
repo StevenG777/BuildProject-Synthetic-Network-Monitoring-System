@@ -58,3 +58,5 @@ The synthetic monitor system monitors networking latency statistics using a ping
 - Prometheus
 - Grafana
 
+## Acknowledgments
+This project is led by project leader [Sonu Gupta](https://www.linkedin.com/in/sonugupta-717829b5/) in BuildFellowship. I want to thank you for Sonu's insightful guidance in understanding fundamentals of Observability, as well as how to use industry-standard technologies like Prometheus and Grafana.
