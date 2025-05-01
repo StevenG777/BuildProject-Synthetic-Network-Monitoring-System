@@ -51,3 +51,7 @@
   - Access the GUI:
     1. Open your web browser
     2. Go to `http://localhost:3000/`
+
+## Final Result
+Grafana Dashboard:
+
