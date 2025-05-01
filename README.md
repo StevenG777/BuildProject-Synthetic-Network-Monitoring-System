@@ -1,2 +1,8 @@
 # BuildProject-Synthetic-Network-Monitoring-System
-This is a synthetic monitoring system that observes changes in network latency in a simulation.
+
+## Features
+- Display network latency statistics in pinging Google.com, Cloudflare.com, and Yahoo.com
+- Capture and store network latency results in time-series formats using Prometheus
+- Visualize network latency trends in Grafana dashboards.
+
+##  
