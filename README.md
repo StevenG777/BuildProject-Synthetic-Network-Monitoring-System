@@ -1,6 +1,7 @@
 # BuildProject-Synthetic-Network-Monitoring-System
 
 ## Features
+- Grafana Dashboard: <img width="1103" alt="Image" src="https://github.com/user-attachments/assets/5ecea76c-f25f-47b1-b661-5bf26cab651a" />
 - Display network latency statistics in pinging Google.com, Cloudflare.com, and Yahoo.com
 - Capture and store network latency results in time-series formats using Prometheus
 - Visualize network latency trends in Grafana dashboards.
@@ -51,7 +52,4 @@
   - Access the GUI:
     1. Open your web browser
     2. Go to `http://localhost:3000/`
-
-## Final Result
-Grafana Dashboard: <img width="1103" alt="Image" src="https://github.com/user-attachments/assets/5ecea76c-f25f-47b1-b661-5bf26cab651a" />
 
