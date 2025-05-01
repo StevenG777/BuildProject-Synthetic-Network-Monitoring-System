@@ -1,31 +1,12 @@
 # BuildProject-Synthetic-Network-Monitoring-System
 
-## Features
+## Purpose
+The synthetic monitor system monitors networking latency statistics using a ping tool and displays their trend through Grafana in a simulated environment, aiming to provide the transparency of network conditions in reaching out to external servers.
+
+## Usage
 - Grafana Dashboard: <img width="1103" alt="Image" src="https://github.com/user-attachments/assets/5ecea76c-f25f-47b1-b661-5bf26cab651a" />
-- Display network latency statistics in pinging Google.com, Cloudflare.com, and Yahoo.com
-- Capture and store network latency results in time-series formats using Prometheus
-- Visualize network latency trends in Grafana dashboards.
 
-## Functionalities
-- **Ping Config File Parser**: Parse the YAML configuration file for pinging the servers.
-- **Ping Parser**: Transmit the data packets to servers in intervals, receive and parse the ping response, and extract latency statistics data.
-- **HTTP Server**: Create an HTTP server to expose its endpoint for Prometheus, a time-series database server, from which to pull.
-- **Prometheus Python Client**: Define metric and time-series data for the Prometheus server.
-- **Prometheus Server**: This is a time series database server that continuously pulls data from the HTTP server, stores it in a time series model, and allows for aggregated analysis and querying.
-- **Prometheus Config File**: Modify the config file to include the source target information for the Prometheus server to pull from.
-- **Grafana**: The visualization tool that pulls data from the Prometheus server and provides an industry-standard dashboard.
-- *Future Development*:
-  - *Host each component in AWS EC2*
-  - *Monitor other PING metrics*
-  - *Monitor other Network metrics*
-
-## Tech Stack
-- Python
-- Prometheus Python Client
-- Prometheus
-- Grafana
-
-## How to Start the Application
+## Installation
 - For PING Parser:
   - Navigate to the directory of ping_parser.py, run `Python ping_parser.py`
   - The program will run indefinitely to collect ping results
@@ -52,4 +33,28 @@
   - Access the GUI:
     1. Open your web browser
     2. Go to `http://localhost:3000/`
+
+## Features
+- Display network latency statistics in pinging Google.com, Cloudflare.com, and Yahoo.com
+- Capture and store network latency results in time-series formats using Prometheus
+- Visualize network latency trends in Grafana dashboards.
+
+## Functionalities
+- **Ping Config File Parser**: Parse the YAML configuration file for pinging the servers.
+- **Ping Parser**: Transmit the data packets to servers in intervals, receive and parse the ping response, and extract latency statistics data.
+- **HTTP Server**: Create an HTTP server to expose its endpoint for Prometheus, a time-series database server, from which to pull.
+- **Prometheus Python Client**: Define metric and time-series data for the Prometheus server.
+- **Prometheus Server**: This is a time series database server that continuously pulls data from the HTTP server, stores it in a time series model, and allows for aggregated analysis and querying.
+- **Prometheus Config File**: Modify the config file to include the source target information for the Prometheus server to pull from.
+- **Grafana**: The visualization tool that pulls data from the Prometheus server and provides an industry-standard dashboard.
+- *Future Development*:
+  - *Host each component in AWS EC2*
+  - *Monitor other PING metrics*
+  - *Monitor other Network metrics*
+
+## Tech Stack
+- Python
+- Prometheus Python Client
+- Prometheus
+- Grafana
 
